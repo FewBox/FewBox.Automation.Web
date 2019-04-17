@@ -16,6 +16,9 @@
     <ProjectReference Include="..\FewBox.Automation.Web\FewBox.Automation.Web.csproj" />
     <Content Include=".\swagger.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include=".\swaggerData.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content> 
   </ItemGroup>
 

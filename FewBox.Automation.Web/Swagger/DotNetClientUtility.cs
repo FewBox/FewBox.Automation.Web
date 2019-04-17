@@ -36,5 +36,20 @@ namespace FewBox.Automation.Web.Swagger
             var generator = new SwaggerToCSharpClientGenerator(document, settings);	
             return generator.GenerateFile();
         }
+
+        public async static Task<string> GenerateFromJson(string json, string namespaceName, string className)
+        {
+            var document = await SwaggerDocument.FromJsonAsync(json);
+            var settings = new SwaggerToCSharpClientGeneratorSettings
+            {
+                ClassName = className, 
+                CSharpGeneratorSettings = 
+                {
+                    Namespace = namespaceName
+                }
+            };
+            var generator = new SwaggerToCSharpClientGenerator(document, settings);	
+            return generator.GenerateFile();
+        }
     }
 }
