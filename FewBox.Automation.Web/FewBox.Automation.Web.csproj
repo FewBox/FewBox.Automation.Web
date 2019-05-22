@@ -6,7 +6,7 @@
     <PackageLicenseUrl>https://raw.githubusercontent.com/FewBox/FewBox.Automation.Web/master/LICENSE</PackageLicenseUrl>
     <PackageProjectUrl>https://fewbox.com</PackageProjectUrl>
     <PackageTags>Swagger Generator</PackageTags>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
     <PackageIconUrl>https://secure.gravatar.com/avatar/ce54e932b36c8d58321cc956410c37ed</PackageIconUrl>
     <RepositoryUrl>https://github.com/FewBox/FewBox.Automation.Web</RepositoryUrl>
     <Company>FewBox</Company>
@@ -17,7 +17,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="NSwag.CodeGeneration.CSharp" Version="12.1.0" />
+    <PackageReference Include="NSwag.CodeGeneration.CSharp" Version="12.3.1" />
   </ItemGroup>
 
 </Project>

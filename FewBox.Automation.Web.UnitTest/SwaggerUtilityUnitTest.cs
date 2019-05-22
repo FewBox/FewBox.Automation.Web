@@ -32,6 +32,11 @@ namespace FewBox.Automation.Web.UnitTest
         {
             string url = "https://raw.githubusercontent.com/kubernetes/kubernetes/master/api/openapi-spec/swagger.json";
             string code = DotNetClientUtility.GenerateFromUrl(url, "FewBox", "Kubernetes").Result;
+            /*using(var writer = System.IO.File.CreateText("./K8S.cs"))
+            {
+                writer.Write(code);
+                writer.Close();
+            }*/
             Assert.IsNotNull(code);
         }
     }
